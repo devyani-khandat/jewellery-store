@@ -1,0 +1,83 @@
+/* =========================================
+   ACTIVE NAVIGATION ITEM
+========================================= */
+
+.main-navigation > button,
+.main-navigation .shopby-nav-trigger {
+  position: relative;
+}
+
+
+/* Elegant Maison-style active state */
+
+.main-navigation .site-nav-active {
+  color: #6b2636 !important;
+}
+
+
+/* Thin underline */
+
+.main-navigation .site-nav-active::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -9px;
+
+  height: 1px;
+
+  background: #6b2636;
+
+  transform-origin: center;
+  animation: navActiveReveal 0.3s ease forwards;
+}
+
+
+/* Tiny editorial dot */
+
+.main-navigation .site-nav-active::before {
+  content: "";
+
+  position: absolute;
+
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+
+  background: #6b2636;
+
+  left: 50%;
+  bottom: -15px;
+
+  transform: translateX(-50%);
+
+  animation: navDotReveal 0.3s ease forwards;
+}
+
+
+@keyframes navActiveReveal {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes navDotReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}

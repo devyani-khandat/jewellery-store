@@ -1,0 +1,474 @@
+/* =========================================================
+   SHOP BY NAVIGATION + MEGA DROPDOWN
+========================================================= */
+
+.shopby-nav-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   SHOP BY BUTTON
+========================================================= */
+
+.shopby-nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  border: none !important;
+  background: transparent !important;
+  color: inherit !important;
+
+  font: inherit;
+  cursor: pointer;
+}
+
+.shopby-nav-trigger::after {
+  display: none !important;
+}
+
+.shopby-nav-chevron {
+  font-size: 11px;
+  line-height: 1;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.shopby-nav-wrap.is-open
+.shopby-nav-chevron {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   MEGA MENU
+========================================================= */
+
+.shopby-mega-menu {
+
+  position: absolute;
+
+  top: calc(100% + 13px);
+  left: 50%;
+
+  width: min(1180px, 92vw);
+
+  transform:
+    translateX(-50%)
+    translateY(-12px);
+
+  display: grid;
+
+  grid-template-columns:
+    230px 1fr;
+
+  gap: 38px;
+
+  padding:
+    38px
+    42px
+    34px;
+
+  background: #f8f2eb;
+
+  color: #4a0715;
+
+  border:
+    1px solid
+    rgba(74, 7, 21, 0.12);
+
+  box-shadow:
+    0 25px 60px
+    rgba(74, 7, 21, 0.14);
+
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.28s ease,
+    transform 0.32s ease,
+    visibility 0.28s ease;
+
+  z-index: 1000;
+}
+
+
+/* OPEN */
+
+.shopby-nav-wrap.is-open
+.shopby-mega-menu {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.shopby-mega-intro {
+
+  padding-right: 30px;
+
+  border-right:
+    1px solid
+    rgba(74, 7, 21, 0.14);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+.shopby-mega-intro > span {
+
+  display: block;
+
+  margin-bottom: 16px;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 8px;
+
+  letter-spacing: 0.25em;
+
+  text-transform: uppercase;
+
+  opacity: 0.55;
+}
+
+
+.shopby-mega-intro h3 {
+
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 29px;
+
+  font-weight: 400;
+
+  line-height: 1.02;
+}
+
+
+.shopby-mega-intro h3 em {
+  font-style: italic;
+}
+
+
+.shopby-mega-intro > button {
+
+  margin-top: auto;
+
+  padding:
+    0 0 5px;
+
+  border: none !important;
+
+  border-bottom:
+    1px solid #4a0715 !important;
+
+  background:
+    transparent !important;
+
+  color:
+    #4a0715 !important;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+
+.shopby-mega-intro > button::after {
+  display: none !important;
+}
+
+
+.shopby-mega-intro > button span {
+
+  margin-left: 7px;
+
+  font-size: 14px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.shopby-mega-intro > button:hover span {
+
+  display: inline-block;
+
+  transform:
+    translateX(4px);
+}
+
+
+/* =========================================================
+   COLUMNS
+========================================================= */
+
+.shopby-mega-columns {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      5,
+      minmax(0, 1fr)
+    );
+
+  gap: 22px;
+}
+
+
+.shopby-mega-column {
+  min-width: 0;
+}
+
+
+.shopby-mega-label {
+
+  display: block;
+
+  min-height: 30px;
+
+  margin-bottom: 17px;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 8px;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   MEGA MENU LINKS
+========================================================= */
+
+.shopby-mega-column > button {
+
+  display: block;
+
+  width: 100%;
+
+  margin:
+    0 0 12px;
+
+  padding: 0;
+
+  border:
+    none !important;
+
+  background:
+    transparent !important;
+
+  color:
+    #4a0715 !important;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.3;
+
+  letter-spacing: 0.04em;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+
+.shopby-mega-column > button::after {
+  display: none !important;
+}
+
+
+.shopby-mega-column > button:hover {
+
+  transform:
+    translateX(5px);
+
+  opacity: 0.62;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .shopby-mega-menu {
+
+    grid-template-columns:
+      190px 1fr;
+
+    gap: 25px;
+
+    padding: 30px;
+  }
+
+
+  .shopby-mega-columns {
+    gap: 15px;
+  }
+
+
+  .shopby-mega-intro h3 {
+    font-size: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .shopby-mega-menu {
+
+    position: fixed;
+
+    top: 128px;
+
+    left: 4vw;
+
+    width: 92vw;
+
+    max-height:
+      calc(100vh - 145px);
+
+    overflow-y: auto;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 28px;
+
+    transform:
+      translateY(-12px);
+  }
+
+
+  .shopby-nav-wrap.is-open
+  .shopby-mega-menu {
+
+    transform:
+      translateY(0);
+  }
+
+
+  .shopby-mega-intro {
+
+    padding-right: 0;
+
+    padding-bottom: 25px;
+
+    border-right: none;
+
+    border-bottom:
+      1px solid
+      rgba(74, 7, 21, 0.14);
+  }
+
+
+  .shopby-mega-intro > button {
+
+    margin-top: 22px;
+  }
+
+
+  .shopby-mega-columns {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .shopby-mega-menu {
+
+    top: 112px;
+
+    padding:
+      25px
+      20px;
+  }
+
+
+  .shopby-mega-columns {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 24px;
+  }
+
+
+  .shopby-mega-label {
+
+    min-height: auto;
+
+    margin-bottom: 13px;
+  }
+
+}

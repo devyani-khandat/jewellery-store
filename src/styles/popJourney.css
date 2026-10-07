@@ -1,0 +1,507 @@
+/* =========================================================
+   POP — ANIMATED JOURNEY
+========================================================= */
+
+.pop-animated-journey {
+  position: relative;
+
+  min-height: 1100px;
+
+  padding: 135px 7% 110px;
+
+  background: #e9dfd5;
+
+  color: #332323;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pop-journey-intro {
+  position: relative;
+  z-index: 5;
+
+  display: grid;
+  grid-template-columns: 0.65fr 1.35fr;
+
+  margin-bottom: 45px;
+}
+
+.pop-journey-intro-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+
+  color: #92746d;
+}
+
+.pop-journey-intro-left p {
+  margin: 0;
+}
+
+.pop-journey-intro-left span {
+  font-size: 9px;
+}
+
+.pop-journey-title > p {
+  margin: 0 0 18px;
+
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.22em;
+
+  color: #92746d;
+}
+
+.pop-journey-title h2 {
+  margin: 0;
+
+  font-size: clamp(55px, 6vw, 92px);
+
+  font-weight: 400;
+
+  line-height: 0.88;
+
+  letter-spacing: -0.055em;
+}
+
+.pop-journey-title h2 em {
+  color: #4a202b;
+
+  font-weight: 400;
+}
+
+.pop-journey-caption {
+  display: block;
+
+  margin-top: 28px;
+
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+
+  letter-spacing: 0.2em;
+
+  color: #92746d;
+}
+
+
+/* =========================================================
+   JOURNEY STAGE
+========================================================= */
+
+.pop-journey-stage {
+  position: relative;
+
+  width: 100%;
+
+  height: 620px;
+
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   SVG
+========================================================= */
+
+.pop-journey-svg {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+
+  pointer-events: none;
+}
+
+.pop-journey-path-base,
+.pop-journey-path-active {
+  fill: none;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pop-journey-path-base {
+  stroke: rgba(74, 32, 43, 0.12);
+
+  stroke-width: 1.5;
+}
+
+.pop-journey-path-active {
+  stroke: #4a202b;
+
+  stroke-width: 2.2;
+
+  filter: drop-shadow(
+    0 0 4px rgba(74, 32, 43, 0.16)
+  );
+}
+
+
+/* =========================================================
+   TRAVELLING DOT
+========================================================= */
+
+.pop-journey-traveller {
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  left: 8.8%;
+  top: 18%;
+
+  border-radius: 50%;
+
+  background: #4a202b;
+
+  box-shadow:
+    0 0 0 7px rgba(74, 32, 43, 0.08),
+    0 0 18px rgba(74, 32, 43, 0.25);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   STEP
+========================================================= */
+
+.pop-journey-step-new {
+  position: absolute;
+
+  width: 230px;
+
+  z-index: 3;
+}
+
+.pop-step-position-1 {
+  left: 4%;
+  top: 5%;
+}
+
+.pop-step-position-2 {
+  left: 26%;
+  top: 49%;
+}
+
+.pop-step-position-3 {
+  left: 61%;
+  top: 5%;
+}
+
+.pop-step-position-4 {
+  right: 3%;
+  top: 54%;
+}
+
+
+/* =========================================================
+   POINT
+========================================================= */
+
+.pop-journey-point {
+  position: relative;
+
+  width: 60px;
+  height: 60px;
+
+  margin-bottom: 22px;
+}
+
+.pop-journey-dot {
+  position: absolute;
+
+  inset: 0;
+
+  width: 18px;
+  height: 18px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background: #4a202b;
+
+  border: 5px solid #e9dfd5;
+
+  box-shadow:
+    0 0 0 1px #4a202b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-journey-dot-final {
+  width: 23px;
+  height: 23px;
+
+  border-width: 4px;
+}
+
+.pop-journey-dot-final span {
+  font-size: 9px;
+
+  color: #f9eee8;
+}
+
+.pop-journey-ring {
+  position: absolute;
+
+  inset: 0;
+
+  margin: auto;
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid rgba(74, 32, 43, 0.45);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.pop-step-new-number {
+  margin-bottom: 5px;
+
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+
+  letter-spacing: 0.18em;
+
+  color: #987a73;
+}
+
+.pop-step-new-title {
+  margin-bottom: 15px;
+
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+
+  letter-spacing: 0.2em;
+
+  color: #4a202b;
+}
+
+.pop-journey-step-new h3 {
+  margin: 0;
+
+  font-size: 29px;
+
+  line-height: 0.98;
+
+  font-weight: 400;
+
+  letter-spacing: -0.03em;
+}
+
+.pop-journey-step-new p {
+  max-width: 220px;
+
+  margin: 17px 0 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+
+  line-height: 1.75;
+
+  color: #705b56;
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.pop-journey-bottom {
+  position: relative;
+  z-index: 5;
+
+  display: grid;
+
+  grid-template-columns: 0.65fr 1.35fr 0.2fr;
+
+  align-items: end;
+
+  padding-top: 35px;
+
+  border-top: 1px solid rgba(62, 39, 36, 0.18);
+}
+
+.pop-journey-bottom > span {
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+
+  letter-spacing: 0.18em;
+
+  color: #92746d;
+}
+
+.pop-journey-bottom p {
+  max-width: 430px;
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+
+  line-height: 1.7;
+
+  color: #6e5a55;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .pop-animated-journey {
+    min-height: 1000px;
+
+    padding: 110px 6% 90px;
+  }
+
+  .pop-journey-intro {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .pop-journey-stage {
+    height: 600px;
+  }
+
+  .pop-journey-step-new {
+    width: 190px;
+  }
+
+  .pop-journey-step-new h3 {
+    font-size: 25px;
+  }
+
+  .pop-journey-bottom {
+    grid-template-columns: 1fr 1.5fr 0.3fr;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .pop-animated-journey {
+    min-height: auto;
+
+    padding: 90px 7% 80px;
+  }
+
+  .pop-journey-intro {
+    display: block;
+
+    margin-bottom: 70px;
+  }
+
+  .pop-journey-intro-left {
+    margin-bottom: 40px;
+  }
+
+  .pop-journey-title h2 {
+    font-size: 56px;
+  }
+
+  /*
+     Mobile changes the journey from a horizontal
+     composition to a vertical timeline.
+  */
+
+  .pop-journey-stage {
+    height: 1250px;
+
+    margin-top: 0;
+  }
+
+  .pop-journey-svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*
+     The SVG still provides the curved path,
+     but the step positions become vertical.
+  */
+
+  .pop-journey-path-base,
+  .pop-journey-path-active {
+    stroke-width: 1.6;
+  }
+
+  .pop-journey-step-new {
+    width: 82%;
+
+    left: 18% !important;
+    right: auto !important;
+  }
+
+  .pop-step-position-1 {
+    top: 3%;
+  }
+
+  .pop-step-position-2 {
+    top: 31%;
+  }
+
+  .pop-step-position-3 {
+    top: 58%;
+  }
+
+  .pop-step-position-4 {
+    top: 85%;
+  }
+
+  .pop-journey-point {
+    margin-bottom: 18px;
+  }
+
+  .pop-journey-step-new h3 {
+    font-size: 27px;
+  }
+
+  .pop-journey-step-new p {
+    max-width: 260px;
+  }
+
+  .pop-journey-bottom {
+    display: block;
+
+    padding-top: 28px;
+  }
+
+  .pop-journey-bottom p {
+    margin: 18px 0;
+  }
+
+  .pop-journey-bottom > span:last-child {
+    display: block;
+  }
+
+}

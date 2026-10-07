@@ -1,0 +1,2812 @@
+/* =========================================================
+
+   PERSONAL FAVOURITES — GLOBAL
+
+========================================================= */
+
+
+.personal-favourites-page {
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #f7f2ec;
+
+  color: #321d22;
+
+}
+
+
+.personal-favourites-page button {
+
+  font-family: inherit;
+
+}
+
+
+/* =========================================================
+
+   HERO
+
+========================================================= */
+
+
+.pf-hero {
+
+  position: relative;
+
+  min-height: 760px;
+
+  padding: 38px 7% 35px;
+
+  overflow: hidden;
+
+  background:
+
+    radial-gradient(
+
+      circle at 76% 48%,
+
+      rgba(214, 174, 177, 0.22),
+
+      transparent 30%
+
+    ),
+
+    #f7f2ec;
+
+}
+
+
+.pf-hero-top,
+
+.pf-hero-bottom {
+
+  position: relative;
+
+  z-index: 10;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  color: #7c5960;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.28em;
+
+  text-transform: uppercase;
+
+}
+
+
+.pf-hero-content {
+
+  position: relative;
+
+  z-index: 5;
+
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  align-items: center;
+
+  min-height: 625px;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+}
+
+
+.pf-hero-copy {
+
+  position: relative;
+
+  z-index: 10;
+
+  max-width: 580px;
+
+  padding-top: 30px;
+
+}
+
+
+.pf-hero-small {
+
+  margin-bottom: 28px;
+
+  color: #815d64;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.3em;
+
+}
+
+
+.pf-hero-copy h1 {
+
+  margin: 0;
+
+  color: #351e24;
+
+  font-family:
+
+    Georgia,
+
+    "Times New Roman",
+
+    serif;
+
+  font-size: clamp(70px, 8vw, 124px);
+
+  font-weight: 400;
+
+  line-height: 0.86;
+
+  letter-spacing: -0.065em;
+
+}
+
+
+.pf-hero-copy h1 em {
+
+  color: #7a2c3c;
+
+  font-style: italic;
+
+  font-weight: 400;
+
+}
+
+
+.pf-hero-copy > p {
+
+  max-width: 390px;
+
+  margin: 38px 0 30px;
+
+  color: #715b60;
+
+  font-family:
+
+    Georgia,
+
+    "Times New Roman",
+
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+
+}
+
+
+.pf-hero-copy > button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #5f2633;
+
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.24em;
+
+  transition: gap 0.35s ease;
+
+}
+
+
+.pf-hero-copy > button:hover {
+
+  gap: 42px;
+
+}
+
+
+.pf-hero-copy > button span {
+
+  font-size: 17px;
+
+  font-weight: 300;
+
+}
+
+
+/* =========================================================
+
+   HERO — EDITORIAL ART
+
+========================================================= */
+
+
+.pf-hero-art {
+
+  position: relative;
+
+  width: min(100%, 690px);
+
+  height: 610px;
+
+  margin-left: auto;
+
+}
+
+
+.pf-art-orbit {
+
+  position: absolute;
+
+  border: 1px solid rgba(122, 44, 60, 0.16);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+}
+
+
+.pf-art-orbit-one {
+
+  width: 490px;
+
+  height: 490px;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%) rotate(-12deg);
+
+}
+
+
+.pf-art-orbit-two {
+
+  width: 390px;
+
+  height: 560px;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%) rotate(30deg);
+
+  border-color: rgba(122, 44, 60, 0.1);
+
+}
+
+
+.pf-art-card {
+
+  position: absolute;
+
+  overflow: hidden;
+
+  background: #eee5df;
+
+  box-shadow:
+
+    0 22px 60px rgba(66, 35, 40, 0.13),
+
+    0 4px 15px rgba(66, 35, 40, 0.06);
+
+}
+
+
+.pf-art-card::after {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+
+  pointer-events: none;
+
+}
+
+
+.pf-art-card img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+.pf-art-card-one {
+
+  width: 210px;
+
+  height: 270px;
+
+  top: 88px;
+
+  left: 65px;
+
+  transform: rotate(-8deg);
+
+  animation: pfFloatOne 7s ease-in-out infinite;
+
+}
+
+
+.pf-art-card-two {
+
+  width: 235px;
+
+  height: 305px;
+
+  top: 50px;
+
+  right: 45px;
+
+  transform: rotate(6deg);
+
+  animation: pfFloatTwo 8s ease-in-out infinite;
+
+}
+
+
+.pf-art-card-three {
+
+  width: 245px;
+
+  height: 320px;
+
+  right: 135px;
+
+  bottom: 24px;
+
+  transform: rotate(-3deg);
+
+  animation: pfFloatThree 8.5s ease-in-out infinite;
+
+}
+
+
+.pf-art-heart {
+
+  position: absolute;
+
+  top: 48%;
+
+  left: 50%;
+
+  z-index: 8;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 76px;
+
+  height: 76px;
+
+  border: 1px solid rgba(122, 44, 60, 0.28);
+
+  border-radius: 50%;
+
+  background: rgba(247, 242, 236, 0.84);
+
+  color: #7a2c3c;
+
+  font-family: Georgia, serif;
+
+  font-size: 34px;
+
+  transform: translate(-50%, -50%);
+
+  -webkit-backdrop-filter: blur(5px);
+
+  backdrop-filter: blur(5px);
+
+  animation: pfHeartPulse 4s ease-in-out infinite;
+
+}
+
+
+.pf-art-number {
+
+  position: absolute;
+
+  right: 22px;
+
+  bottom: 62px;
+
+  color: #8b6b70;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 0.2em;
+
+}
+
+
+.pf-art-label {
+
+  position: absolute;
+
+  left: 22px;
+
+  bottom: 54px;
+
+  color: #86666c;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.22em;
+
+}
+
+
+.pf-hero-bottom {
+
+  position: absolute;
+
+  right: 7%;
+
+  bottom: 34px;
+
+  left: 7%;
+
+}
+
+
+.pf-hero-bottom div {
+
+  width: 1px;
+
+  height: 38px;
+
+  margin: 0 auto;
+
+  background: rgba(122, 44, 60, 0.28);
+
+}
+
+
+/* =========================================================
+
+   HERO ANIMATIONS
+
+========================================================= */
+
+
+@keyframes pfFloatOne {
+
+  0%,
+
+  100% {
+
+    transform: rotate(-8deg) translateY(0);
+
+  }
+
+
+  50% {
+
+    transform: rotate(-6deg) translateY(-10px);
+
+  }
+
+}
+
+
+@keyframes pfFloatTwo {
+
+  0%,
+
+  100% {
+
+    transform: rotate(6deg) translateY(0);
+
+  }
+
+
+  50% {
+
+    transform: rotate(8deg) translateY(12px);
+
+  }
+
+}
+
+
+@keyframes pfFloatThree {
+
+  0%,
+
+  100% {
+
+    transform: rotate(-3deg) translateY(0);
+
+  }
+
+
+  50% {
+
+    transform: rotate(-1deg) translateY(-9px);
+
+  }
+
+}
+
+
+@keyframes pfHeartPulse {
+
+  0%,
+
+  100% {
+
+    transform: translate(-50%, -50%) scale(1);
+
+  }
+
+
+  50% {
+
+    transform: translate(-50%, -50%) scale(1.06);
+
+  }
+
+}
+
+
+/* =========================================================
+
+   INTRO
+
+========================================================= */
+
+
+.pf-intro {
+
+  position: relative;
+
+  min-height: 720px;
+
+  padding: 115px 7%;
+
+  overflow: hidden;
+
+  background: #fffaf6;
+
+}
+
+
+.pf-section-label {
+
+  position: absolute;
+
+  top: 115px;
+
+  left: 7%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  color: #806268;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 0.25em;
+
+  text-transform: uppercase;
+
+}
+
+
+.pf-section-label span {
+
+  color: #7a2c3c;
+
+  font-size: 11px;
+
+}
+
+
+.pf-section-label p {
+
+  margin: 0;
+
+}
+
+
+.pf-intro-content {
+
+  display: grid;
+
+  grid-template-columns: 1fr 0.85fr;
+
+  align-items: center;
+
+  gap: 100px;
+
+  max-width: 1250px;
+
+  min-height: 500px;
+
+  margin: 0 auto;
+
+}
+
+
+/* =========================================================
+
+   INTRO VISUAL
+
+========================================================= */
+
+
+.pf-intro-visual {
+
+  position: relative;
+
+  width: min(100%, 540px);
+
+  height: 500px;
+
+  margin: 40px auto 0;
+
+}
+
+
+.pf-intro-orbit {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  width: 390px;
+
+  height: 390px;
+
+  border: 1px solid rgba(122, 44, 60, 0.18);
+
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%) rotate(-18deg);
+
+}
+
+
+.pf-intro-orbit-inner {
+
+  width: 285px;
+
+  height: 440px;
+
+  transform: translate(-50%, -50%) rotate(38deg);
+
+  border-color: rgba(122, 44, 60, 0.09);
+
+}
+
+
+.pf-intro-heart {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  z-index: 4;
+
+  color: #7a2c3c;
+
+  font-family: Georgia, serif;
+
+  font-size: 52px;
+
+  transform: translate(-50%, -50%);
+
+}
+
+
+.pf-mini-product {
+
+  position: absolute;
+
+  z-index: 5;
+
+  overflow: hidden;
+
+  width: 145px;
+
+  height: 175px;
+
+  border: 7px solid #fffaf6;
+
+  border-radius: 50%;
+
+  background: #eee5df;
+
+  box-shadow:
+
+    0 15px 40px rgba(75, 42, 48, 0.14),
+
+    0 2px 8px rgba(75, 42, 48, 0.08);
+
+}
+
+
+.pf-mini-product img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+.pf-mini-one {
+
+  top: 25px;
+
+  left: 58px;
+
+  transform: rotate(-8deg);
+
+  animation: pfMiniOne 7s ease-in-out infinite;
+
+}
+
+
+.pf-mini-two {
+
+  top: 120px;
+
+  right: 22px;
+
+  transform: rotate(7deg);
+
+  animation: pfMiniTwo 8s ease-in-out infinite;
+
+}
+
+
+.pf-mini-three {
+
+  right: 88px;
+
+  bottom: 20px;
+
+  transform: rotate(-5deg);
+
+  animation: pfMiniThree 7.5s ease-in-out infinite;
+
+}
+
+
+@keyframes pfMiniOne {
+
+  0%,
+
+  100% {
+
+    transform: rotate(-8deg) translateY(0);
+
+  }
+
+
+  50% {
+
+    transform: rotate(-5deg) translateY(-8px);
+
+  }
+
+}
+
+
+@keyframes pfMiniTwo {
+
+  0%,
+
+  100% {
+
+    transform: rotate(7deg) translateY(0);
+
+  }
+
+
+  50% {
+
+    transform: rotate(9deg) translateY(9px);
+
+  }
+
+}
+
+
+@keyframes pfMiniThree {
+
+  0%,
+
+  100% {
+
+    transform: rotate(-5deg) translateY(0);
+
+  }
+
+
+  50% {
+
+    transform: rotate(-2deg) translateY(-7px);
+
+  }
+
+}
+
+
+.pf-intro-connector {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 25%;
+
+  width: 50%;
+
+  height: 1px;
+
+  background: rgba(122, 44, 60, 0.17);
+
+  transform: rotate(-18deg);
+
+}
+
+
+.pf-intro-visual-label {
+
+  position: absolute;
+
+  right: 3px;
+
+  bottom: 38px;
+
+  color: #896b70;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  line-height: 1.7;
+
+  letter-spacing: 0.22em;
+
+  text-align: right;
+
+}
+
+
+/* =========================================================
+
+   INTRO COPY
+
+========================================================= */
+
+
+.pf-intro-copy-wrap {
+
+  max-width: 520px;
+
+}
+
+
+.pf-overline {
+
+  margin: 0 0 26px;
+
+  color: #7a2c3c;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.28em;
+
+}
+
+
+.pf-intro-copy-wrap h2 {
+
+  margin: 0;
+
+  color: #382126;
+
+  font-family:
+
+    Georgia,
+
+    "Times New Roman",
+
+    serif;
+
+  font-size: clamp(56px, 6vw, 88px);
+
+  font-weight: 400;
+
+  line-height: 0.92;
+
+  letter-spacing: -0.05em;
+
+}
+
+
+.pf-intro-copy-wrap h2 em {
+
+  color: #7a2c3c;
+
+  font-style: italic;
+
+}
+
+
+.pf-intro-copy {
+
+  max-width: 400px;
+
+  margin: 35px 0 0;
+
+  color: #786469;
+
+  font-family:
+
+    Georgia,
+
+    "Times New Roman",
+
+    serif;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+}
+
+
+.pf-intro-signature {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  max-width: 390px;
+
+  margin-top: 50px;
+
+  color: #8a6a70;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+
+}
+
+
+.pf-intro-signature div {
+
+  flex: 1;
+
+  height: 1px;
+
+  background: rgba(122, 44, 60, 0.2);
+
+}
+
+
+.pf-intro-signature strong {
+
+  color: #5f2633;
+
+  font-weight: 600;
+
+}
+
+
+/* =========================================================
+
+   COLLECTION
+
+========================================================= */
+
+
+.pf-collection {
+
+  padding: 125px 7% 135px;
+
+  background: #f7f2ec;
+
+}
+
+
+.pf-collection-header {
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  max-width: 1280px;
+
+  margin: 0 auto 75px;
+
+}
+
+
+.pf-collection-header p {
+
+  margin: 0 0 18px;
+
+  color: #8a6b70;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.25em;
+
+}
+
+
+.pf-collection-header h2 {
+
+  margin: 0;
+
+  color: #351f25;
+
+  font-family:
+
+    Georgia,
+
+    "Times New Roman",
+
+    serif;
+
+  font-size: clamp(58px, 6vw, 90px);
+
+  font-weight: 400;
+
+  line-height: 0.88;
+
+  letter-spacing: -0.055em;
+
+}
+
+
+.pf-collection-header h2 em {
+
+  color: #7a2c3c;
+
+  font-style: italic;
+
+}
+
+
+.pf-count {
+
+  display: flex;
+
+  align-items: flex-end;
+
+  gap: 13px;
+
+  color: #86676d;
+
+  font-family: Arial, sans-serif;
+
+}
+
+
+.pf-count span,
+
+.pf-count small {
+
+  font-size: 8px;
+
+  letter-spacing: 0.2em;
+
+}
+
+
+.pf-count strong {
+
+  color: #6c2737;
+
+  font-family:
+
+    Georgia,
+
+    "Times New Roman",
+
+    serif;
+
+  font-size: 52px;
+
+  font-weight: 400;
+
+  line-height: 0.8;
+
+}
+
+
+/* =========================================================
+
+   PRODUCT GRID
+
+========================================================= */
+
+
+.pf-product-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 58px 28px;
+
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+}
+
+
+.pf-product {
+
+  min-width: 0;
+
+}
+
+
+.pf-product-featured {
+
+  transform: translateY(-30px);
+
+}
+
+
+.pf-product-image {
+
+  position: relative;
+
+  aspect-ratio: 0.83;
+
+  overflow: hidden;
+
+  background: #ece3dd;
+
+}
+
+
+.pf-product-image img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s cubic-bezier(0.2, 0.65, 0.2, 1);
+
+}
+
+
+.pf-product:hover .pf-product-image img {
+
+  transform: scale(1.045);
+
+}
+
+
+.pf-heart {
+
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 44px;
+
+  height: 44px;
+
+  border: 1px solid rgba(90, 35, 47, 0.18);
+
+  border-radius: 50%;
+
+  background: rgba(255, 250, 246, 0.88);
+
+  color: #6f2939;
+
+  cursor: pointer;
+
+  font-family: Georgia, serif;
+
+  font-size: 21px;
+
+  -webkit-backdrop-filter: blur(5px);
+
+  backdrop-filter: blur(5px);
+
+  transition:
+
+    transform 0.3s ease,
+
+    background 0.3s ease;
+
+}
+
+
+.pf-heart:hover {
+
+  transform: scale(1.08);
+
+}
+
+
+.pf-heart.is-active {
+
+  background: #6f2939;
+
+  color: #fffaf7;
+
+}
+
+
+.pf-product-index {
+
+  position: absolute;
+
+  bottom: 18px;
+
+  left: 18px;
+
+  color: rgba(255, 250, 246, 0.85);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+
+  letter-spacing: 0.2em;
+
+}
+
+
+.pf-product-info {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-top: 19px;
+
+}
+
+
+.pf-product-info span {
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #987b80;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.22em;
+
+}
+
+
+.pf-product-info h3 {
+
+  margin: 0;
+
+  color: #3a252a;
+
+  font-family:
+
+    Georgia,
+
+    "Times New Roman",
+
+    serif;
+
+  font-size: 20px;
+
+  font-weight: 400;
+
+}
+
+
+.pf-product-info strong {
+
+  color: #6d303d;
+
+  font-family:
+
+    Georgia,
+
+    "Times New Roman",
+
+    serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   PERSONAL EDIT
+========================================================= */
+
+.pf-personal-edit {
+  position: relative;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(142, 54, 70, 0.28),
+      transparent 34%
+    ),
+    #3a0c16;
+
+  color: #fff8f4;
+}
+
+
+/* =========================================================
+   QUIET EDITORIAL ORBIT
+========================================================= */
+
+.pf-personal-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 720px;
+  height: 330px;
+
+  border: 1px solid rgba(255, 218, 215, 0.1);
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.pf-ring-one {
+  animation: pfQuietOrbit 18s ease-in-out infinite;
+}
+
+.pf-ring-two,
+.pf-ring-three {
+  display: none;
+}
+
+@keyframes pfQuietOrbit {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(-18deg) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(-12deg) scale(1.03);
+  }
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.pf-personal-content {
+  position: relative;
+  z-index: 5;
+
+  width: min(1050px, 88%);
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.pf-personal-content > p:first-child {
+  margin: 0 0 25px;
+
+  color: #d7a5a8;
+
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.3em;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.pf-personal-content h2 {
+  margin: 0;
+
+  color: #fff8f4;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(58px, 6.5vw, 92px);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+}
+
+.pf-personal-content h2 em {
+  color: #dfa7aa;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.pf-personal-description {
+  max-width: 380px;
+
+  margin: 25px auto 0;
+
+  color: rgba(255, 238, 234, 0.62);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SAVED PRODUCTS
+========================================================= */
+
+.pf-saved-preview {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+
+  margin: 38px 0 30px;
+}
+
+.pf-saved-item {
+  width: 125px;
+
+  text-align: left;
+}
+
+.pf-saved-image {
+  position: relative;
+
+  width: 125px;
+  height: 140px;
+
+  overflow: hidden;
+
+  background: #5b1c27;
+}
+
+.pf-saved-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.pf-saved-item:hover .pf-saved-image img {
+  transform: scale(1.05);
+}
+
+.pf-saved-image > span {
+  position: absolute;
+
+  bottom: 8px;
+  left: 9px;
+
+  color: rgba(255, 245, 240, 0.78);
+
+  font-family: Arial, sans-serif;
+  font-size: 7px;
+
+  letter-spacing: 0.16em;
+}
+
+.pf-saved-item-info {
+  padding-top: 9px;
+}
+
+.pf-saved-item-info span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #c98e94;
+
+  font-family: Arial, sans-serif;
+  font-size: 7px;
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+}
+
+.pf-saved-item-info strong {
+  display: block;
+
+  color: rgba(255, 244, 240, 0.88);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.pf-personal-content button {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+
+  margin-top: 30px;
+  padding: 12px 0;
+
+  border: 0;
+  border-bottom: 1px solid rgba(255, 238, 234, 0.4);
+
+  background: transparent;
+
+  color: #fff8f4;
+
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.25em;
+
+  transition:
+    gap 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.pf-personal-content button:hover {
+  gap: 36px;
+  border-color: rgba(255, 238, 234, 0.75);
+}
+
+.pf-personal-content button span {
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   PERSONAL EDIT — MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .pf-personal-edit {
+    min-height: 650px;
+  }
+
+  .pf-personal-ring {
+    width: 500px;
+    height: 250px;
+  }
+
+  .pf-personal-content {
+    width: 90%;
+  }
+
+  .pf-personal-content h2 {
+    font-size: clamp(52px, 14vw, 75px);
+  }
+
+  .pf-saved-preview {
+    gap: 8px;
+  }
+
+  .pf-saved-item {
+    width: 76px;
+  }
+
+  .pf-saved-image {
+    width: 76px;
+    height: 92px;
+  }
+
+  .pf-saved-item-info strong {
+    font-size: 10px;
+  }
+
+  .pf-saved-item-info span {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .pf-personal-edit {
+    min-height: 630px;
+  }
+
+  .pf-saved-item {
+    width: 66px;
+  }
+
+  .pf-saved-image {
+    width: 66px;
+    height: 82px;
+  }
+
+  .pf-saved-preview {
+    gap: 6px;
+  }
+}
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.pf-final {
+  position: relative;
+
+  min-height: 720px;
+
+  padding: 38px 7% 55px;
+
+  overflow: hidden;
+
+  background: #fffaf6;
+  color: #392229;
+}
+
+
+/* =========================================================
+   SUBTLE ORBITS
+========================================================= */
+
+.pf-final-orbit {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  border: 1px solid rgba(122, 44, 60, 0.09);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.pf-final-orbit-one {
+  width: 760px;
+  height: 330px;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(-15deg);
+}
+
+.pf-final-orbit-two {
+  width: 420px;
+  height: 700px;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(35deg);
+
+  border-color: rgba(122, 44, 60, 0.055);
+}
+
+
+/* =========================================================
+   TOP LABELS
+========================================================= */
+
+.pf-final-top {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #8a6b70;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.25em;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.pf-final-content {
+  position: relative;
+  z-index: 3;
+
+  max-width: 1050px;
+
+  margin: 120px auto 0;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.pf-final-content > p {
+  margin: 0 0 32px;
+
+  color: #7a2c3c;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.3em;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.pf-final-content h2 {
+  margin: 0;
+
+  color: #392229;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(58px, 7vw, 105px);
+
+  font-weight: 400;
+
+  line-height: 0.87;
+
+  letter-spacing: -0.06em;
+}
+
+.pf-final-content h2 em {
+  color: #7a2c3c;
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.pf-final-divider {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  width: 280px;
+
+  margin: 48px auto 0;
+}
+
+.pf-final-divider span {
+  flex: 1;
+
+  height: 1px;
+
+  background: rgba(122, 44, 60, 0.18);
+}
+
+.pf-final-divider i {
+  color: #7a2c3c;
+
+  font-family: Georgia, serif;
+
+  font-size: 17px;
+
+  font-style: normal;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.pf-final-content button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 28px;
+
+  margin-top: 38px;
+
+  padding: 14px 0;
+
+  border: 0;
+
+  border-bottom: 1px solid rgba(95, 38, 51, 0.4);
+
+  background: transparent;
+
+  color: #5f2633;
+
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.25em;
+
+  transition:
+    gap 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.pf-final-content button:hover {
+  gap: 42px;
+
+  border-color: #5f2633;
+}
+
+.pf-final-content button span {
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   BOTTOM LABELS
+========================================================= */
+
+.pf-final-bottom {
+  position: absolute;
+
+  right: 7%;
+  bottom: 35px;
+  left: 7%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  color: #9a7d82;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.22em;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .pf-final {
+    min-height: 650px;
+
+    padding:
+      28px
+      6%
+      45px;
+  }
+
+  .pf-final-top {
+    font-size: 7px;
+
+    letter-spacing: 0.17em;
+  }
+
+  .pf-final-content {
+    margin-top: 105px;
+  }
+
+  .pf-final-content h2 {
+    font-size:
+      clamp(
+        52px,
+        14vw,
+        78px
+      );
+  }
+
+  .pf-final-divider {
+    width: 220px;
+
+    margin-top: 38px;
+  }
+
+  .pf-final-content button {
+    margin-top: 30px;
+  }
+
+  .pf-final-bottom {
+    right: 6%;
+    bottom: 25px;
+    left: 6%;
+
+    font-size: 6px;
+  }
+
+  .pf-final-orbit-one {
+    width: 520px;
+    height: 240px;
+  }
+
+  .pf-final-orbit-two {
+    width: 300px;
+    height: 520px;
+  }
+}
+
+
+@media (max-width: 430px) {
+
+  .pf-final-top {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .pf-final-content {
+    margin-top: 90px;
+  }
+
+  .pf-final-content h2 {
+    font-size:
+      clamp(
+        48px,
+        14vw,
+        68px
+      );
+  }
+
+  .pf-final-divider {
+    width: 180px;
+  }
+
+  .pf-final-bottom {
+    gap: 15px;
+  }
+
+}
+/* =========================================================
+
+   RESPONSIVE — TABLET
+
+========================================================= */
+
+
+@media (max-width: 1050px) {
+
+
+  .pf-hero {
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+  }
+
+
+  .pf-hero-content {
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+  }
+
+
+  .pf-art-card-one {
+
+    left: 20px;
+
+  }
+
+
+  .pf-art-card-two {
+
+    right: 10px;
+
+  }
+
+
+  .pf-art-card-three {
+
+    right: 75px;
+
+  }
+
+
+  .pf-intro-content {
+
+    gap: 55px;
+
+  }
+
+
+  .pf-mini-product {
+
+    width: 125px;
+
+    height: 155px;
+
+  }
+
+
+  .pf-intro-orbit {
+
+    width: 350px;
+
+    height: 350px;
+
+  }
+
+
+  .pf-intro-orbit-inner {
+
+    width: 260px;
+
+    height: 400px;
+
+  }
+
+}
+
+
+/* =========================================================
+
+   RESPONSIVE — MOBILE
+
+========================================================= */
+
+
+@media (max-width: 760px) {
+
+
+  .pf-hero {
+
+    min-height: auto;
+
+    padding: 28px 6% 35px;
+
+  }
+
+
+  .pf-hero-top {
+
+    font-size: 7px;
+
+    letter-spacing: 0.18em;
+
+  }
+
+
+  .pf-hero-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+
+    padding-top: 65px;
+
+  }
+
+
+  .pf-hero-copy {
+
+    width: 100%;
+
+    max-width: none;
+
+    text-align: center;
+
+  }
+
+
+  .pf-hero-small {
+
+    margin-bottom: 22px;
+
+    font-size: 7px;
+
+  }
+
+
+  .pf-hero-copy h1 {
+
+    font-size: clamp(62px, 18vw, 94px);
+
+  }
+
+
+  .pf-hero-copy > p {
+
+    max-width: 330px;
+
+    margin: 28px auto;
+
+    font-size: 14px;
+
+  }
+
+
+  .pf-hero-copy > button {
+
+    justify-content: center;
+
+  }
+
+
+  .pf-hero-art {
+
+    width: 100%;
+
+    height: 470px;
+
+    margin-top: 25px;
+
+  }
+
+
+  .pf-art-orbit-one {
+
+    width: 330px;
+
+    height: 330px;
+
+  }
+
+
+  .pf-art-orbit-two {
+
+    width: 270px;
+
+    height: 380px;
+
+  }
+
+
+  .pf-art-card-one {
+
+    width: 145px;
+
+    height: 190px;
+
+    top: 70px;
+
+    left: 3%;
+
+  }
+
+
+  .pf-art-card-two {
+
+    width: 165px;
+
+    height: 215px;
+
+    top: 38px;
+
+    right: 2%;
+
+  }
+
+
+  .pf-art-card-three {
+
+    width: 175px;
+
+    height: 225px;
+
+    right: 19%;
+
+    bottom: 5px;
+
+  }
+
+
+  .pf-art-heart {
+
+    width: 58px;
+
+    height: 58px;
+
+    font-size: 27px;
+
+  }
+
+
+  .pf-art-label {
+
+    left: 0;
+
+    bottom: 20px;
+
+    font-size: 7px;
+
+  }
+
+
+  .pf-art-number {
+
+    right: 0;
+
+    bottom: 25px;
+
+  }
+
+
+  .pf-hero-bottom {
+
+    position: relative;
+
+    right: auto;
+
+    bottom: auto;
+
+    left: auto;
+
+    margin-top: 15px;
+
+    font-size: 7px;
+
+  }
+
+
+  .pf-hero-bottom div {
+
+    height: 25px;
+
+  }
+
+
+  /* INTRO */
+
+
+  .pf-intro {
+
+    min-height: auto;
+
+    padding: 95px 6% 100px;
+
+  }
+
+
+  .pf-section-label {
+
+    top: 42px;
+
+    left: 6%;
+
+    font-size: 7px;
+
+  }
+
+
+  .pf-intro-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 60px;
+
+    min-height: auto;
+
+  }
+
+
+  .pf-intro-visual {
+
+    width: 100%;
+
+    height: 370px;
+
+    margin: 0 auto;
+
+  }
+
+
+  .pf-intro-orbit {
+
+    width: 285px;
+
+    height: 285px;
+
+  }
+
+
+  .pf-intro-orbit-inner {
+
+    width: 220px;
+
+    height: 330px;
+
+  }
+
+
+  .pf-mini-product {
+
+    width: 100px;
+
+    height: 125px;
+
+    border-width: 5px;
+
+  }
+
+
+  .pf-mini-one {
+
+    left: 5%;
+
+    top: 15px;
+
+  }
+
+
+  .pf-mini-two {
+
+    right: 2%;
+
+    top: 85px;
+
+  }
+
+
+  .pf-mini-three {
+
+    right: 24%;
+
+    bottom: 0;
+
+  }
+
+
+  .pf-intro-heart {
+
+    font-size: 38px;
+
+  }
+
+
+  .pf-intro-visual-label {
+
+    right: 0;
+
+    bottom: 10px;
+
+    font-size: 7px;
+
+  }
+
+
+  .pf-intro-copy-wrap {
+
+    text-align: center;
+
+  }
+
+
+  .pf-overline {
+
+    font-size: 7px;
+
+  }
+
+
+  .pf-intro-copy-wrap h2 {
+
+    font-size: clamp(54px, 15vw, 75px);
+
+  }
+
+
+  .pf-intro-copy {
+
+    max-width: 330px;
+
+    margin: 28px auto 0;
+
+    font-size: 14px;
+
+  }
+
+
+  .pf-intro-signature {
+
+    max-width: 330px;
+
+    margin: 35px auto 0;
+
+    font-size: 7px;
+
+  }
+
+
+  /* COLLECTION */
+
+
+  .pf-collection {
+
+    padding: 90px 6% 100px;
+
+  }
+
+
+  .pf-collection-header {
+
+    align-items: flex-start;
+
+    margin-bottom: 50px;
+
+  }
+
+
+  .pf-collection-header h2 {
+
+    font-size: clamp(54px, 15vw, 76px);
+
+  }
+
+
+  .pf-count {
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 6px;
+
+  }
+
+
+  .pf-count strong {
+
+    font-size: 38px;
+
+  }
+
+
+  .pf-product-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 45px 14px;
+
+  }
+
+
+  .pf-product-featured {
+
+    transform: translateY(0);
+
+  }
+
+
+  .pf-product-info {
+
+    display: block;
+
+  }
+
+
+  .pf-product-info strong {
+
+    display: block;
+
+    margin-top: 8px;
+
+  }
+
+
+  .pf-product-info h3 {
+
+    font-size: 16px;
+
+  }
+/* FINAL */
+
+
+  .pf-final {
+
+    min-height: 600px;
+
+    padding: 28px 6% 60px;
+
+  }
+
+
+  .pf-final-top {
+
+    font-size: 7px;
+
+  }
+
+
+  .pf-final-content {
+
+    margin-top: 100px;
+
+  }
+
+
+  .pf-final-content h2 {
+
+    font-size: clamp(54px, 15vw, 80px);
+
+  }
+
+
+}
+
+
+/* =========================================================
+
+   VERY SMALL MOBILE
+
+========================================================= */
+
+
+@media (max-width: 430px) {
+
+
+  .pf-art-card-one {
+
+    width: 125px;
+
+    height: 165px;
+
+    left: 0;
+
+  }
+
+
+  .pf-art-card-two {
+
+    width: 140px;
+
+    height: 185px;
+
+    right: 0;
+
+  }
+
+
+  .pf-art-card-three {
+
+    width: 150px;
+
+    height: 195px;
+
+    right: 15%;
+
+  }
+
+
+  .pf-intro-visual {
+
+    height: 330px;
+
+  }
+
+
+  .pf-mini-product {
+
+    width: 88px;
+
+    height: 110px;
+
+  }
+
+
+  .pf-mini-three {
+
+    right: 21%;
+
+  }
+
+
+  .pf-product-grid {
+
+    gap: 38px 10px;
+
+  }
+
+
+  .pf-product-info h3 {
+
+    font-size: 14px;
+
+  }
+
+
+  .pf-heart {
+
+    top: 10px;
+
+    right: 10px;
+
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 18px;
+
+  }
+
+
+  .pf-saved-item {
+
+    width: 62px;
+
+  }
+
+
+  .pf-saved-item img {
+
+    width: 62px;
+
+    height: 76px;
+
+  }
+
+
+}

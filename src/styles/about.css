@@ -1,0 +1,992 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f8f3ee;
+  color: #3a0c16;
+  font-family: "Times New Roman", Georgia, serif;
+}
+
+.about-page button {
+  font-family: inherit;
+}
+
+
+/* =========================================
+   01 — HERO
+========================================= */
+
+.about-hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 34px 6vw 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    radial-gradient(
+      circle at 72% 48%,
+      rgba(205, 153, 151, 0.25),
+      transparent 27%
+    ),
+    #f8f3ee;
+  overflow: hidden;
+}
+
+.about-hero-top,
+.about-hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #765d5c;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+
+.about-hero-content {
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  align-items: center;
+  gap: 7vw;
+}
+
+.about-hero-copy {
+  max-width: 650px;
+}
+
+.about-eyebrow {
+  margin: 0 0 24px;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: #8b6766;
+}
+
+.about-hero h1 {
+  margin: 0;
+  font-size: clamp(60px, 7vw, 112px);
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.about-hero h1 em,
+.about-philosophy h2 em,
+.about-details h2 em,
+.about-signature h2 em,
+.about-final h2 em {
+  font-weight: 400;
+  color: #8b4350;
+}
+
+.about-hero-description {
+  max-width: 470px;
+  margin: 38px 0 32px;
+  color: #745f5c;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.about-scroll-button,
+.about-final button {
+  border: none;
+  border-bottom: 1px solid #6b2636;
+  background: transparent;
+  padding: 0 0 11px;
+  color: #6b2636;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.about-scroll-button span,
+.about-final button span {
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.about-scroll-button:hover,
+.about-final button:hover {
+  padding-right: 12px;
+}
+
+
+/* Hero Art */
+
+.about-hero-art {
+  position: relative;
+  width: min(42vw, 520px);
+  height: min(42vw, 520px);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-orbit {
+  position: absolute;
+  border: 1px solid rgba(107, 38, 54, 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.orbit-large {
+  width: 92%;
+  height: 43%;
+  transform: rotate(-25deg);
+  animation: aboutOrbitOne 12s ease-in-out infinite;
+}
+
+.orbit-small {
+  width: 64%;
+  height: 76%;
+  transform: rotate(28deg);
+  animation: aboutOrbitTwo 15s ease-in-out infinite;
+}
+
+.about-orbit-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6b2636;
+}
+
+.dot-one {
+  top: 22%;
+  right: 19%;
+}
+
+.dot-two {
+  bottom: 19%;
+  left: 18%;
+}
+
+.about-hero-jewel {
+  width: 210px;
+  height: 210px;
+  border: 1px solid rgba(107, 38, 54, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  transition: transform 0.8s ease;
+}
+
+.about-hero-jewel:hover {
+  transform: rotate(135deg) scale(1.04);
+}
+
+.jewel-inner {
+  width: 142px;
+  height: 142px;
+  border: 1px solid rgba(107, 38, 54, 0.25);
+  background: rgba(255, 248, 244, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jewel-inner span {
+  transform: rotate(-45deg);
+  font-size: 42px;
+  color: #8b4350;
+}
+
+.about-hero-number {
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+}
+
+.about-hero-label {
+  position: absolute;
+  bottom: 13%;
+  right: 4%;
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 0.18em;
+  text-align: right;
+  color: #806967;
+}
+
+@keyframes aboutOrbitOne {
+  0%,
+  100% {
+    transform: rotate(-25deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(-19deg) scale(1.035);
+  }
+}
+
+@keyframes aboutOrbitTwo {
+  0%,
+  100% {
+    transform: rotate(28deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(35deg) scale(0.97);
+  }
+}
+
+
+/* =========================================
+   02 — PHILOSOPHY
+========================================= */
+
+.about-philosophy {
+  min-height: 850px;
+  padding: 120px 8vw;
+  display: grid;
+  grid-template-columns: 0.55fr 1.45fr;
+  gap: 7vw;
+  align-items: center;
+  background: #eee0dc;
+}
+
+.about-section-number {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: #806260;
+}
+
+.about-philosophy-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-philosophy-mark {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border: 1px solid rgba(107, 38, 54, 0.22);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-philosophy-mark::before,
+.about-philosophy-mark::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(107, 38, 54, 0.12);
+  border-radius: 50%;
+}
+
+.about-philosophy-mark::after {
+  inset: -25px;
+}
+
+.about-philosophy-mark span {
+  font-size: 35px;
+  color: #6b2636;
+  animation: markFloat 4s ease-in-out infinite;
+}
+
+.about-side-note {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.8;
+  letter-spacing: 0.18em;
+  color: #806260;
+}
+
+.about-philosophy-content {
+  max-width: 850px;
+}
+
+.about-philosophy-content h2 {
+  margin: 0;
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.about-philosophy-line {
+  width: 100%;
+  height: 1px;
+  margin: 50px 0 35px;
+  background: rgba(107, 38, 54, 0.18);
+}
+
+.about-philosophy-content > p:not(.about-eyebrow) {
+  max-width: 590px;
+  margin: 0 0 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #735d5a;
+}
+
+@keyframes markFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+
+/* =========================================
+   03 — DETAILS
+========================================= */
+
+.about-details {
+  padding: 125px 7vw;
+  background: #f8f3ee;
+}
+
+.about-details-heading {
+  max-width: 1250px;
+  margin: 0 auto 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 50px;
+}
+
+.about-details-heading h2 {
+  margin: 20px 0 0;
+  font-size: clamp(52px, 6vw, 88px);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.045em;
+}
+
+.about-details-heading > p {
+  max-width: 310px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #765f5d;
+}
+
+.about-detail-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 20px;
+}
+
+.about-detail-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.about-detail-card:hover {
+  transform: translateY(-7px);
+}
+
+.detail-card-large {
+  min-height: 600px;
+  grid-row: span 2;
+  background: #ead8d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detail-card-art {
+  flex: 1;
+  min-height: 380px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-ring {
+  width: 230px;
+  height: 230px;
+  border: 18px solid rgba(107, 38, 54, 0.85);
+  border-right-color: transparent;
+  border-radius: 50%;
+  transform: rotate(-35deg);
+  box-shadow:
+    0 0 0 1px rgba(107, 38, 54, 0.15),
+    0 30px 60px rgba(58, 12, 22, 0.12);
+  transition: transform 0.8s ease;
+}
+
+.detail-card-large:hover .detail-ring {
+  transform: rotate(25deg) scale(1.08);
+}
+
+.detail-card-copy {
+  padding: 30px 34px 35px;
+}
+
+.detail-card-copy span,
+.detail-wide-copy span {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: #896d69;
+}
+
+.detail-card-copy h3,
+.detail-wide-copy h3 {
+  margin: 8px 0 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.detail-card-copy p,
+.detail-wide-copy p {
+  max-width: 400px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.75;
+  color: #735d5a;
+}
+
+.detail-card-small {
+  min-height: 290px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blush-card {
+  background: #e5c9c6;
+}
+
+.burgundy-card {
+  background: #4a101d;
+  color: #fff7f3;
+}
+
+.burgundy-card .detail-card-copy p,
+.burgundy-card .detail-card-copy span {
+  color: rgba(255, 247, 243, 0.68);
+}
+
+.detail-symbol {
+  font-size: 42px;
+  color: #6b2636;
+}
+
+.burgundy-card .detail-symbol {
+  color: #ead0c8;
+}
+
+.detail-card-small .detail-card-copy {
+  padding: 0;
+}
+
+.detail-card-wide {
+  min-height: 280px;
+  grid-column: 2;
+  background: #d8c0bd;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.detail-wide-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wide-orbit,
+.wide-orbit-inner {
+  position: absolute;
+  width: 180px;
+  height: 95px;
+  border: 1px solid rgba(107, 38, 54, 0.35);
+  border-radius: 50%;
+  transform: rotate(-25deg);
+}
+
+.wide-orbit-inner {
+  width: 120px;
+  height: 150px;
+  transform: rotate(25deg);
+}
+
+.detail-wide-visual span {
+  font-size: 30px;
+  color: #6b2636;
+}
+
+.detail-wide-copy {
+  align-self: center;
+  padding: 35px;
+}
+
+
+/* =========================================
+   04 — SIGNATURE
+========================================= */
+
+.about-signature {
+  min-height: 900px;
+  padding: 125px 8vw;
+  background: #3a0c16;
+  color: #fff7f2;
+}
+
+.about-signature-header {
+  max-width: 800px;
+}
+
+.about-signature-header .about-section-number {
+  color: rgba(255, 247, 242, 0.5);
+}
+
+.about-signature-header h2 {
+  margin: 25px 0 20px;
+  font-size: clamp(52px, 6vw, 88px);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+}
+
+.about-signature-header h2 em {
+  color: #e3b6b2;
+}
+
+.about-signature-header > p:last-child {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: rgba(255, 247, 242, 0.58);
+}
+
+.about-signature-layout {
+  max-width: 1250px;
+  margin: 100px auto 0;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.signature-list {
+  border-top: 1px solid rgba(255, 247, 242, 0.18);
+}
+
+.signature-item {
+  width: 100%;
+  padding: 27px 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 247, 242, 0.18);
+  background: transparent;
+  color: rgba(255, 247, 242, 0.55);
+  display: grid;
+  grid-template-columns: 45px 1fr 30px;
+  text-align: left;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+.signature-item span {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.signature-item strong {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.signature-item i {
+  font-size: 20px;
+  font-style: normal;
+  text-align: right;
+}
+
+.signature-item:hover,
+.signature-item.signature-active {
+  color: #fff7f2;
+  padding-left: 12px;
+}
+
+.signature-item.signature-active strong {
+  color: #e3b6b2;
+}
+
+.signature-display {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signature-display-orbit {
+  position: absolute;
+  width: 520px;
+  height: 260px;
+  border: 1px solid rgba(255, 247, 242, 0.16);
+  border-radius: 50%;
+  transform: rotate(-18deg);
+  animation: signatureOrbit 14s ease-in-out infinite;
+}
+
+.signature-display-orbit::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 18px;
+  right: 80px;
+  border-radius: 50%;
+  background: #e3b6b2;
+}
+
+.signature-display-center {
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(255, 247, 242, 0.3);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.signature-display-center span {
+  position: absolute;
+  top: 23px;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: rgba(255, 247, 242, 0.45);
+}
+
+.signature-star {
+  font-size: 38px;
+  color: #e3b6b2;
+}
+
+.signature-display-center small {
+  margin-top: 10px;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 247, 242, 0.55);
+}
+
+.signature-display-copy {
+  position: absolute;
+  bottom: 12%;
+  right: 0;
+  width: 270px;
+}
+
+.signature-display-copy p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgba(255, 247, 242, 0.64);
+}
+
+@keyframes signatureOrbit {
+  0%,
+  100% {
+    transform: rotate(-18deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(-11deg) scale(1.04);
+  }
+}
+
+
+/* =========================================
+   05 — FINAL
+========================================= */
+
+.about-final {
+  position: relative;
+  min-height: 780px;
+  padding: 100px 7vw 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f8f3ee;
+  color: #3a0c16;
+}
+
+.about-final-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-final-star {
+  display: block;
+  margin: 45px 0 25px;
+  color: #8b4350;
+  font-size: 30px;
+}
+
+.about-final h2 {
+  margin: 0;
+  font-size: clamp(50px, 6vw, 90px);
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.about-final h2 em {
+  color: #8b4350;
+}
+
+.about-final-content > p:not(.about-section-number) {
+  max-width: 440px;
+  margin: 32px auto 35px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #765f5d;
+}
+
+.about-final-orbit {
+  position: absolute;
+  border: 1px solid rgba(107, 38, 54, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.final-orbit-one {
+  width: 900px;
+  height: 410px;
+  transform: rotate(-17deg);
+}
+
+.final-orbit-two {
+  width: 600px;
+  height: 700px;
+  transform: rotate(22deg);
+}
+
+.about-final-footer {
+  position: absolute;
+  left: 7vw;
+  right: 7vw;
+  bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: #8a706c;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    min-height: auto;
+    padding: 25px 7vw 30px;
+  }
+
+  .about-hero-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 80px 0;
+  }
+
+  .about-hero-art {
+    width: min(78vw, 500px);
+    height: min(78vw, 500px);
+    margin: auto;
+  }
+
+  .about-philosophy {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 100px 7vw;
+  }
+
+  .about-philosophy-left {
+    min-height: 250px;
+  }
+
+  .about-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-card-large {
+    grid-row: auto;
+  }
+
+  .detail-card-wide {
+    grid-column: auto;
+  }
+
+  .about-signature-layout {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .signature-display {
+    min-height: 420px;
+  }
+
+  .about-final {
+    min-height: 700px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .about-hero-top,
+  .about-hero-bottom {
+    font-size: 8px;
+  }
+
+  .about-hero h1 {
+    font-size: 57px;
+  }
+
+  .about-hero-description {
+    font-size: 12px;
+  }
+
+  .about-hero-jewel {
+    width: 150px;
+    height: 150px;
+  }
+
+  .jewel-inner {
+    width: 100px;
+    height: 100px;
+  }
+
+  .jewel-inner span {
+    font-size: 30px;
+  }
+
+  .about-philosophy {
+    padding: 80px 7vw;
+  }
+
+  .about-philosophy-content h2,
+  .about-details-heading h2,
+  .about-signature-header h2,
+  .about-final h2 {
+    font-size: 48px;
+  }
+
+  .about-details {
+    padding: 90px 6vw;
+  }
+
+  .about-details-heading {
+    display: block;
+  }
+
+  .about-details-heading > p {
+    margin-top: 30px;
+  }
+
+  .detail-card-large {
+    min-height: 500px;
+  }
+
+  .detail-card-small {
+    min-height: 250px;
+  }
+
+  .detail-card-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-wide-visual {
+    min-height: 220px;
+  }
+
+  .about-signature {
+    padding: 90px 7vw;
+  }
+
+  .about-signature-layout {
+    margin-top: 65px;
+  }
+
+  .signature-item strong {
+    font-size: 18px;
+  }
+
+  .signature-display {
+    min-height: 380px;
+  }
+
+  .signature-display-orbit {
+    width: 330px;
+    height: 180px;
+  }
+
+  .signature-display-center {
+    width: 145px;
+    height: 145px;
+  }
+
+  .signature-display-copy {
+    width: 190px;
+    right: 0;
+    bottom: 4%;
+  }
+
+  .signature-display-copy p {
+    font-size: 10px;
+  }
+
+  .about-final {
+    min-height: 650px;
+    padding: 80px 6vw;
+  }
+
+  .about-final-footer {
+    left: 6vw;
+    right: 6vw;
+    font-size: 7px;
+  }
+
+  .final-orbit-one {
+    width: 600px;
+  }
+
+  .final-orbit-two {
+    width: 450px;
+  }
+}
